@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/szk302/OPG/issues"
   },
-  "homepage": "https://github.com/szk302/OPG#readme"
+  "homepage": "https://github.com/szk302/OPG#readme",
+  "devDependencies": {
+    "esbuild": "^0.9.3"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
