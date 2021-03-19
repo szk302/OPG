@@ -4,6 +4,10 @@
   "description": "Oreno passwords generator",
   "main": "index.js",
   "scripts": {
+    "clean": "",
+    "build": "esbuild ./src/index.jsx --bundle '--define:process.env.NODE_ENV=\"production\"' --outfile=public/bundle.js",
+    "predev": "build",
+    "dev": "gulp dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,10 +21,13 @@
   },
   "homepage": "https://github.com/szk302/OPG#readme",
   "devDependencies": {
-    "esbuild": "^0.9.3"
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-esbuild": "^0.6.1"
   },
   "dependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
   }
 }
